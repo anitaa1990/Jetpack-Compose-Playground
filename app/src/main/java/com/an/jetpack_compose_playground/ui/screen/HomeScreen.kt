@@ -24,11 +24,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HomeScreen() {
+fun HomeScreen(
+    navController: NavHostController
+) {
     Scaffold(
         topBar = {
             TopAppBar(
@@ -59,7 +63,7 @@ fun HomeScreen() {
             DemoButtonWithText(
                 buttonTextRes = R.string.btn_txt_book_pager,
                 infoTextRes = R.string.info_txt_book_pager,
-                onClick = {  }
+                onClick = { navController.navigate(ROUTE_BOOK_PAGER) }
             )
         }
     }

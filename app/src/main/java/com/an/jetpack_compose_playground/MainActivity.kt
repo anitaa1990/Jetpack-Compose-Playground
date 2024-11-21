@@ -10,6 +10,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.an.jetpack_compose_playground.AppConstants.HOME
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
+import com.an.jetpack_compose_playground.ui.screen.BookPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.HomeScreen
 import com.an.jetpack_compose_playground.ui.theme.JetpackComposePlaygroundTheme
 
@@ -27,7 +29,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize()
                 ) {
                     composable(route = HOME) {
-                        HomeScreen()
+                        HomeScreen(navController = navController)
+                    }
+                    composable(route = ROUTE_BOOK_PAGER) {
+                        BookPagerScreen()
                     }
                 }
             }
