@@ -5,4 +5,6 @@
     <string name="info_txt_book_pager">BookPager is a composable that creates a flip-style pager component with horizontal or vertical orientations. It simulates the effect of flipping through pages in a book, with additional features like overscroll effects.</string>
     <string name="btn_txt_parallax_pager">ParallaxPager</string>
     <string name="info_txt_parallax_pager">ParallaxPager is a composable that creates a parallax-style pager component that takes places when scrolling horizontally between pages.</string>
+    <string name="btn_txt_circle_reveal_pager">CircleRevealPager</string>
+    <string name="info_txt_circle_reveal_pager">CircleRevealPager is a composable that creates a circular reveal animation that will clip the incoming page in a growing circle, until it fills the screen.</string>
 </resources>

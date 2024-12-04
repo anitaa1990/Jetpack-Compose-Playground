@@ -11,8 +11,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.an.jetpack_compose_playground.AppConstants.HOME
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.ui.screen.BookPagerScreen
+import com.an.jetpack_compose_playground.ui.screen.CircleRevealPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.HomeScreen
 import com.an.jetpack_compose_playground.ui.screen.ParallaxPagerScreen
 import com.an.jetpack_compose_playground.ui.theme.JetpackComposePlaygroundTheme
@@ -38,6 +40,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(route = ROUTE_PARALLAX_PAGER) {
                         ParallaxPagerScreen()
+                    }
+                    composable(route = ROUTE_CIRCLE_REVEAL_PAGER) {
+                        CircleRevealPagerScreen()
                     }
                 }
             }

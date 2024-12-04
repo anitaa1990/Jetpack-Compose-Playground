@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.R
 
@@ -71,6 +72,12 @@ fun HomeScreen(
                 buttonTextRes = R.string.btn_txt_parallax_pager,
                 infoTextRes = R.string.info_txt_parallax_pager,
                 onClick = { navController.navigate(ROUTE_PARALLAX_PAGER) }
+            )
+
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_circle_reveal_pager,
+                infoTextRes = R.string.info_txt_circle_reveal_pager,
+                onClick = { navController.navigate(ROUTE_CIRCLE_REVEAL_PAGER) }
             )
         }
     }
