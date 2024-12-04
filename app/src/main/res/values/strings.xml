@@ -2,5 +2,7 @@
     <string name="app_name">Jetpack-Compose-Playground</string>
     <string name="text_home_screen">This repository contains demos on building some advanced Jetpack Compose layouts and components that I have personally used in some of my android app projects.</string>
     <string name="btn_txt_book_pager">BookPager</string>
-    <string name="info_txt_book_pager">BookPager is a composable function that creates a flip-style pager component with horizontal or vertical orientations. It simulates the effect of flipping through pages in a book, with additional features like overscroll effects.</string>
+    <string name="info_txt_book_pager">BookPager is a composable that creates a flip-style pager component with horizontal or vertical orientations. It simulates the effect of flipping through pages in a book, with additional features like overscroll effects.</string>
+    <string name="btn_txt_parallax_pager">ParallaxPager</string>
+    <string name="info_txt_parallax_pager">ParallaxPager is a composable that creates a parallax-style pager component that takes places when scrolling horizontally between pages.</string>
 </resources>
