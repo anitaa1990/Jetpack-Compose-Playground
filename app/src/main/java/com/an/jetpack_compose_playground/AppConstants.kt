@@ -5,4 +5,5 @@ object AppConstants {
     const val ROUTE_BOOK_PAGER = "Book-Pager"
     const val ROUTE_PARALLAX_PAGER = "Parallax-Pager"
     const val ROUTE_CIRCLE_REVEAL_PAGER = "CircleReveal-Pager"
+    const val ROUTE_COMPOSE_TEXT_EDITOR = "Compose-TextEditor"
 }

@@ -7,4 +7,6 @@
     <string name="info_txt_parallax_pager">ParallaxPager is a composable that creates a parallax-style pager component that takes places when scrolling horizontally between pages.</string>
     <string name="btn_txt_circle_reveal_pager">CircleRevealPager</string>
     <string name="info_txt_circle_reveal_pager">CircleRevealPager is a composable that creates a circular reveal animation that will clip the incoming page in a growing circle, until it fills the screen.</string>
+    <string name="btn_txt_compose_text_editor">ComposeTextEditor</string>
+    <string name="info_txt_compose_text_editor">ComposeTextEditor is a composable text editor that supports rich text formatting such as bold, italics, underline, and more.</string>
 </resources>

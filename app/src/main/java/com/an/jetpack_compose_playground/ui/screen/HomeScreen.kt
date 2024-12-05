@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.R
 
@@ -60,6 +61,12 @@ fun HomeScreen(
             Text(
                 text = stringResource(R.string.text_home_screen),
                 style = MaterialTheme.typography.bodyLarge
+            )
+
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_compose_text_editor,
+                infoTextRes = R.string.info_txt_compose_text_editor,
+                onClick = { navController.navigate(ROUTE_COMPOSE_TEXT_EDITOR) }
             )
 
             DemoButtonWithText(
