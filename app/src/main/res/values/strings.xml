@@ -9,4 +9,9 @@
     <string name="info_txt_circle_reveal_pager">CircleRevealPager is a composable that creates a circular reveal animation that will clip the incoming page in a growing circle, until it fills the screen.</string>
     <string name="btn_txt_compose_text_editor">ComposeTextEditor</string>
     <string name="info_txt_compose_text_editor">ComposeTextEditor is a composable text editor that supports rich text formatting such as bold, italics, underline, and more.</string>
+    <string name="btn_txt_network_status">Network Observer</string>
+    <string name="info_txt_network_status">NetworkObserver is a class that observes the network changes in the device. This can be observed by the UI classes to display network status to the end user.</string>
+    <string name="info_txt_network_status_screen">Try toggling the wifi on and off on your device to view the network status bar updates.</string>
+    <string name="network_status_wifi_on">Back online!</string>
+    <string name="network_status_wifi_off">No Internet Connection!</string>
 </resources>

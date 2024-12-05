@@ -28,6 +28,7 @@ import androidx.navigation.NavHostController
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.R
 
@@ -85,6 +86,12 @@ fun HomeScreen(
                 buttonTextRes = R.string.btn_txt_circle_reveal_pager,
                 infoTextRes = R.string.info_txt_circle_reveal_pager,
                 onClick = { navController.navigate(ROUTE_CIRCLE_REVEAL_PAGER) }
+            )
+
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_network_status,
+                infoTextRes = R.string.info_txt_network_status,
+                onClick = { navController.navigate(ROUTE_NETWORK_STATUS) }
             )
         }
     }
