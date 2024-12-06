@@ -4,11 +4,7 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
-import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
@@ -17,6 +13,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.an.jetpack_compose_playground.R
+import com.an.jetpack_compose_playground.ui.common.MainScaffold
 import com.an.jetpack_compose_playground.ui.component.network.NetworkObserver
 import com.an.jetpack_compose_playground.ui.component.network.NetworkStatusBar
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -42,22 +39,7 @@ fun NetworkStatusScreen(
         }
     }
 
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = MaterialTheme.colorScheme.primaryContainer,
-                    titleContentColor = MaterialTheme.colorScheme.primary,
-                ),
-                title = {
-                    Text(
-                        text = stringResource(id = R.string.btn_txt_network_status)
-                    )
-                },
-                modifier = Modifier
-            )
-        }
-    ) { innerPadding ->
+    MainScaffold { innerPadding ->
         Column(modifier = Modifier.padding(innerPadding)) {
             // displays network status bar when network is connected/disconnected
             NetworkStatusBar(isInternetConnected.value)
