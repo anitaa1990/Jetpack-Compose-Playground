@@ -39,7 +39,7 @@ fun NetworkStatusScreen(
         }
     }
 
-    MainScaffold { innerPadding ->
+    MainScaffold(R.string.btn_txt_network_status) { innerPadding ->
         Column(modifier = Modifier.padding(innerPadding)) {
             // displays network status bar when network is connected/disconnected
             NetworkStatusBar(isInternetConnected.value)

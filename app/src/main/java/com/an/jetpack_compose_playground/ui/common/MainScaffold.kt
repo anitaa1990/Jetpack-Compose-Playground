@@ -1,5 +1,6 @@
 package com.an.jetpack_compose_playground.ui.common
 
+import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
@@ -10,11 +11,11 @@ import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import com.an.jetpack_compose_playground.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScaffold(
+    @StringRes titleId: Int,
     pageContent: @Composable (PaddingValues) -> Unit
 ) {
     Scaffold(
@@ -26,7 +27,7 @@ fun MainScaffold(
                 ),
                 title = {
                     Text(
-                        text = stringResource(id = R.string.btn_txt_compose_text_editor)
+                        text = stringResource(id = titleId)
                     )
                 },
                 modifier = Modifier

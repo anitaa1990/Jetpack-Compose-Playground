@@ -20,6 +20,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.an.jetpack_compose_playground.R
 import com.an.jetpack_compose_playground.ui.common.MainScaffold
 import com.an.jetpack_compose_playground.ui.component.permission.PermissionHandler
 import com.an.jetpack_compose_playground.ui.component.permission.PermissionManager
@@ -42,7 +43,7 @@ fun RuntimePermissionScreen() {
     // Create an instance of PermissionManager
     val permissionManager = remember { PermissionManager(context) }
 
-    MainScaffold { innerPadding ->
+    MainScaffold(R.string.btn_txt_runtime_permission) { innerPadding ->
         Column(
             modifier = Modifier
                 .padding(innerPadding)

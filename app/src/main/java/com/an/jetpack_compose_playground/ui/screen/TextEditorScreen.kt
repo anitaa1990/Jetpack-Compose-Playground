@@ -12,6 +12,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.unit.dp
+import com.an.jetpack_compose_playground.R
 import com.an.jetpack_compose_playground.ui.common.MainScaffold
 import com.an.jetpack_compose_playground.ui.component.ComposeTextEditor
 import com.an.jetpack_compose_playground.ui.component.EditorToolbar
@@ -21,7 +22,7 @@ import com.an.jetpack_compose_playground.ui.component.FormattingSpan
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TextEditorScreen() {
-    MainScaffold { innerPadding ->
+    MainScaffold(R.string.btn_txt_compose_text_editor) { innerPadding ->
         var text by remember { mutableStateOf<AnnotatedString>(AnnotatedString("")) }
         var activeFormats by rememberSaveable { mutableStateOf(setOf<FormattingAction>()) }
         var formattingSpans by remember { mutableStateOf(listOf<FormattingSpan>()) }
