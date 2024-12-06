@@ -30,6 +30,7 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_RUNTIME_PERMISSION
 import com.an.jetpack_compose_playground.R
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -92,6 +93,12 @@ fun HomeScreen(
                 buttonTextRes = R.string.btn_txt_network_status,
                 infoTextRes = R.string.info_txt_network_status,
                 onClick = { navController.navigate(ROUTE_NETWORK_STATUS) }
+            )
+
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_runtime_permission,
+                infoTextRes = R.string.info_txt_runtime_permission,
+                onClick = { navController.navigate(ROUTE_RUNTIME_PERMISSION) }
             )
         }
     }

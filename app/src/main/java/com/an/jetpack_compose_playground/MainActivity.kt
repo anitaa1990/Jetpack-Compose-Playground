@@ -16,12 +16,14 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_RUNTIME_PERMISSION
 import com.an.jetpack_compose_playground.ui.component.network.NetworkObserver
 import com.an.jetpack_compose_playground.ui.screen.BookPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.CircleRevealPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.HomeScreen
 import com.an.jetpack_compose_playground.ui.screen.NetworkStatusScreen
 import com.an.jetpack_compose_playground.ui.screen.ParallaxPagerScreen
+import com.an.jetpack_compose_playground.ui.screen.RuntimePermissionScreen
 import com.an.jetpack_compose_playground.ui.screen.TextEditorScreen
 import com.an.jetpack_compose_playground.ui.theme.JetpackComposePlaygroundTheme
 
@@ -56,6 +58,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(route = ROUTE_NETWORK_STATUS) {
                         NetworkStatusScreen(NetworkObserver(context))
+                    }
+                    composable(route = ROUTE_RUNTIME_PERMISSION) {
+                        RuntimePermissionScreen()
                     }
                 }
             }

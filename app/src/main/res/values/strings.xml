@@ -14,4 +14,6 @@
     <string name="info_txt_network_status_screen">Try toggling the wifi on and off on your device to view the network status bar updates.</string>
     <string name="network_status_wifi_on">Back online!</string>
     <string name="network_status_wifi_off">No Internet Connection!</string>
+    <string name="btn_txt_runtime_permission">Runtime Permission</string>
+    <string name="info_txt_runtime_permission">An example of how runtime permission works using the PermissionHandler and PermissionManager.</string>
 </resources>
