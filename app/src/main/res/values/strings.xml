@@ -16,4 +16,12 @@
     <string name="network_status_wifi_off">No Internet Connection!</string>
     <string name="btn_txt_runtime_permission">Runtime Permission</string>
     <string name="info_txt_runtime_permission">An example of how runtime permission works using the PermissionHandler and PermissionManager.</string>
+    <string name="btn_txt_biometric_auth">Biometric Login</string>
+    <string name="info_txt_biometric_auth">An example implementation of Biometric authentication using BiometricAuthUtil class.</string>
+
+    <string name="btn_biometrics">Login using fingerprint or face recognition</string>
+    <string name="biometric_subtitle">Use fingerprint, face recognition, or device PIN to log in.</string>
+    <string name="biometric_desc">Authenticate yourself securely.</string>
+    <string name="biometric_auth_success">Authentication successful</string>
+    <string name="biometric_auth_failure">Authentication failed: %1$s</string>
 </resources>

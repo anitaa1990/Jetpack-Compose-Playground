@@ -11,6 +11,7 @@ composeBom = "2024.11.00"
 navigationCompose = "2.8.4"
 coil = "2.6.0"
 materialIcons = "1.7.5"
+biometric = "1.2.0-alpha05"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -34,6 +35,9 @@ navigation-compose = { group = "androidx.navigation", name = "navigation-compose
 
 ## Coil
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+## Biometric authentication
+biometric-auth = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

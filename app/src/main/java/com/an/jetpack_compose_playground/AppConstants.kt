@@ -8,4 +8,5 @@ object AppConstants {
     const val ROUTE_COMPOSE_TEXT_EDITOR = "Compose-TextEditor"
     const val ROUTE_NETWORK_STATUS = "Network-Status"
     const val ROUTE_RUNTIME_PERMISSION = "Runtime-Permission"
+    const val ROUTE_BIOMETRIC_AUTH = "Biometric-Auth"
 }

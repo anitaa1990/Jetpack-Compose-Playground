@@ -25,6 +25,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_BIOMETRIC_AUTH
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
@@ -99,6 +100,12 @@ fun HomeScreen(
                 buttonTextRes = R.string.btn_txt_runtime_permission,
                 infoTextRes = R.string.info_txt_runtime_permission,
                 onClick = { navController.navigate(ROUTE_RUNTIME_PERMISSION) }
+            )
+
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_biometric_auth,
+                infoTextRes = R.string.info_txt_biometric_auth,
+                onClick = { navController.navigate(ROUTE_BIOMETRIC_AUTH) }
             )
         }
     }
