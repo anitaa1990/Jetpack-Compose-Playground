@@ -24,4 +24,7 @@
     <string name="biometric_desc">Authenticate yourself securely.</string>
     <string name="biometric_auth_success">Authentication successful</string>
     <string name="biometric_auth_failure">Authentication failed: %1$s</string>
+
+    <string name="btn_txt_paginated_list">PaginatedLazyColumn</string>
+    <string name="info_txt_paginated_list">PaginatedLazyColumn is a composable for displaying a paginated list using LazyColumn in Jetpack Compose.</string>
 </resources>

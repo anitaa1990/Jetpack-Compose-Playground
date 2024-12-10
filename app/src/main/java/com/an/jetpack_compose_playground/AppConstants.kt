@@ -9,4 +9,5 @@ object AppConstants {
     const val ROUTE_NETWORK_STATUS = "Network-Status"
     const val ROUTE_RUNTIME_PERMISSION = "Runtime-Permission"
     const val ROUTE_BIOMETRIC_AUTH = "Biometric-Auth"
+    const val ROUTE_PAGINATED_LIST = "Paginated-List"
 }

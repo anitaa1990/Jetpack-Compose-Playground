@@ -62,6 +62,9 @@ dependencies {
     // Biometric authentication
     implementation(libs.biometric.auth)
 
+    // Kotlin collections
+    implementation(libs.kotlin.collections)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
