@@ -11,7 +11,7 @@ This repository contains a collection of concise write ups and demos on building
 * Take a look at [TextEditorScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/TextEditorScreen.kt) file on how to use this component in any app.
 * Currently being used in the [NotesApp](https://github.com/anitaa1990/NotesApp).
 
-<img src="https://github.com/anitaa1990/NotesApp/blob/main/media/1.png" width="300" style="max-width:100%;">  <img src="https://github.com/anitaa1990/NotesApp/blob/main/media/2.png" width="300" style="max-width:100%;">   <img src="https://github.com/anitaa1990/NotesApp/blob/main/media/3.png" width="300" style="max-width:100%;">
+<img src="https://github.com/anitaa1990/NotesApp/blob/main/media/1.png" width="200" style="max-width:100%;">  <img src="https://github.com/anitaa1990/NotesApp/blob/main/media/2.png" width="200" style="max-width:100%;">   <img src="https://github.com/anitaa1990/NotesApp/blob/main/media/3.png" width="200" style="max-width:100%;">
 
 ---
 
@@ -46,6 +46,7 @@ This repository contains a collection of concise write ups and demos on building
 * Take a look at [NetworkStatusScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/NetworkStatusScreen.kt) file on how to use this component in any app.
 
 <img src="https://github.com/anitaa1990/Jetpack-Compose-Playground/blob/main/media/7.gif" width="300" style="max-width:100%;">
+
 ---
 
 ### Runtime Permissions
@@ -57,6 +58,8 @@ This repository contains a collection of concise write ups and demos on building
 ---
 
 ### Biometric Login
+* Login using [Android's Biometric API](https://developer.android.com/identity/sign-in/biometric-auth). Supports fingerprint login, facial login or PIN login.
+* [BiometricAuthUtil](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/BiometricAuthUtil.kt) is a utility class to handle biometric (fingerprint and facial recognition) authentication functionality.
+* Take a look at [BiometricAuthScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/BiometricAuthScreen.kt) file on how to use this component in any app.
 
-
-
+<img src="https://github.com/anitaa1990/Jetpack-Compose-Playground/blob/main/media/9.gif" width="300" style="max-width:100%;">
