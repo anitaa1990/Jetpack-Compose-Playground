@@ -10,4 +10,5 @@ object AppConstants {
     const val ROUTE_RUNTIME_PERMISSION = "Runtime-Permission"
     const val ROUTE_BIOMETRIC_AUTH = "Biometric-Auth"
     const val ROUTE_PAGINATED_LIST = "Paginated-List"
+    const val ROUTE_SLIDE_TO_BOOK = "Slide-to-Book"
 }

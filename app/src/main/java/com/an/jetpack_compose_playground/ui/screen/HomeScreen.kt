@@ -33,6 +33,7 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PAGINATED_LIST
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_RUNTIME_PERMISSION
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_SLIDE_TO_BOOK
 import com.an.jetpack_compose_playground.R
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -113,6 +114,11 @@ fun HomeScreen(
                 buttonTextRes = R.string.btn_txt_paginated_list,
                 infoTextRes = R.string.info_txt_paginated_list,
                 onClick = { navController.navigate(ROUTE_PAGINATED_LIST) }
+            )
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_slide_to_book,
+                infoTextRes = R.string.info_txt_slide_to_book,
+                onClick = { navController.navigate(ROUTE_SLIDE_TO_BOOK) }
             )
         }
     }

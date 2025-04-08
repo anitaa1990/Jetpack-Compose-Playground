@@ -27,4 +27,7 @@
 
     <string name="btn_txt_paginated_list">PaginatedLazyColumn</string>
     <string name="info_txt_paginated_list">PaginatedLazyColumn is a composable for displaying a paginated list using LazyColumn in Jetpack Compose.</string>
+
+    <string name="btn_txt_slide_to_book">SlideToBook</string>
+    <string name="info_txt_slide_to_book">SlideToBook is a composable that allows the user to drag a slider thumb horizontally to confirm an action. Once dragged past a threshold, the button triggers an action, plays a subtle animation, and displays a loading indicator.</string>
 </resources>
