@@ -74,3 +74,9 @@ This repository contains a collection of concise write ups and demos on building
 * Take a look at [PaginatedLazyColumnScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/PaginatedLazyColumnScreen.kt) file on how to use this component in any app.
 
 <img src="https://github.com/anitaa1990/Jetpack-Compose-Playground/blob/main/media/10.gif" width="300" style="max-width:100%;">
+
+### SlideToBook
+* [SlideToBook](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/SlideToBook.kt) is a `composable`  that allows the user to drag a slider thumb horizontally to confirm an action. Once dragged past a threshold, the button triggers an action, plays a subtle animation, and displays a loading indicator.
+* Take a look at [SlideToBookScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/SlideToBookScreen.kt) file on how to use this component in any app.
+  
+<img src="https://github.com/user-attachments/assets/0fd7340c-7947-4b54-828d-d3714101240b" style="max-width:100%;">
