@@ -61,5 +61,16 @@ This repository contains a collection of concise write ups and demos on building
 * Login using [Android's Biometric API](https://developer.android.com/identity/sign-in/biometric-auth). Supports fingerprint login, facial login or PIN login.
 * [BiometricAuthUtil](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/BiometricAuthUtil.kt) is a utility class to handle biometric (fingerprint and facial recognition) authentication functionality.
 * Take a look at [BiometricAuthScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/BiometricAuthScreen.kt) file on how to use this component in any app.
+* You would need to add the `androidx.biometric:biometric:1.2.0-alpha05` dependency to the app.
 
 <img src="https://github.com/anitaa1990/Jetpack-Compose-Playground/blob/main/media/9.gif" width="300" style="max-width:100%;">
+
+---
+
+### PaginatedLazyColumn
+* [PaginatedLazyColumn](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/PaginatedLazyColumn.kt) is a `composable` for displaying a paginated list using LazyColumn in Jetpack Compose. This solution is robust for smaller-scale apps. For more complex scenarios with large data sets or multiple data sources, you should consider using the Paging library.
+* This solution uses `PersistentList` because it ensures immutability, making state updates safe and predictable. Modifications like `add` or `remove` return a new list, preserving the original. Persistent lists are optimized for minimal copying, enhancing performance in this scenario where the list is updated frequently.
+* In order to use `PersistentList`, you would need to add the [Kotlin Collections dependency](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-collections-immutable/0.3.5) to the app. 
+* Take a look at [PaginatedLazyColumnScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/PaginatedLazyColumnScreen.kt) file on how to use this component in any app.
+
+<img src="https://github.com/anitaa1990/Jetpack-Compose-Playground/blob/main/media/10.gif" width="300" style="max-width:100%;">
