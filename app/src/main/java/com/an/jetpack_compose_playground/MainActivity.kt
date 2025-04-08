@@ -20,7 +20,6 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_PAGINATED_LIST
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_RUNTIME_PERMISSION
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_SLIDE_TO_BOOK
-import com.an.jetpack_compose_playground.ui.component.SlideToBookButton
 import com.an.jetpack_compose_playground.ui.component.network.NetworkObserver
 import com.an.jetpack_compose_playground.ui.screen.BiometricAuthScreen
 import com.an.jetpack_compose_playground.ui.screen.BookPagerScreen
@@ -30,6 +29,7 @@ import com.an.jetpack_compose_playground.ui.screen.NetworkStatusScreen
 import com.an.jetpack_compose_playground.ui.screen.PaginatedLazyColumnScreen
 import com.an.jetpack_compose_playground.ui.screen.ParallaxPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.RuntimePermissionScreen
+import com.an.jetpack_compose_playground.ui.screen.SlideToBookScreen
 import com.an.jetpack_compose_playground.ui.screen.TextEditorScreen
 import com.an.jetpack_compose_playground.ui.theme.JetpackComposePlaygroundTheme
 
@@ -75,7 +75,7 @@ class MainActivity : FragmentActivity() {
                         PaginatedLazyColumnScreen()
                     }
                     composable(route = ROUTE_SLIDE_TO_BOOK) {
-                        // TODO:
+                        SlideToBookScreen()
                     }
                 }
             }

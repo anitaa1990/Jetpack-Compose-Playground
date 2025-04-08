@@ -30,4 +30,5 @@
 
     <string name="btn_txt_slide_to_book">SlideToBook</string>
     <string name="info_txt_slide_to_book">SlideToBook is a composable that allows the user to drag a slider thumb horizontally to confirm an action. Once dragged past a threshold, the button triggers an action, plays a subtle animation, and displays a loading indicator.</string>
+    <string name="btn_slide_to_book">Book Ride @ Rs.191</string>
 </resources>
