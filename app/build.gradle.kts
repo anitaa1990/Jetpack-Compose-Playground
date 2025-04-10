@@ -65,6 +65,9 @@ dependencies {
     // Kotlin collections
     implementation(libs.kotlin.collections)
 
+    // Google Maps
+    implementation(libs.google.maps.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

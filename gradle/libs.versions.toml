@@ -13,6 +13,7 @@ coil = "2.6.0"
 materialIcons = "1.7.5"
 biometric = "1.2.0-alpha05"
 kotlinCollections = "0.3.5"
+googleMapsCompose = "6.5.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -42,6 +43,10 @@ biometric-auth = { group = "androidx.biometric", name = "biometric", version.ref
 
 ## Kotlin collections: PersistentList
 kotlin-collections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "kotlinCollections" }
+
+## Google Maps Compose: simplifies the integration of Google Maps into Jetpack Compose by providing
+## composable functions that wrap the Maps SDK
+google-maps-compose = { group = "com.google.maps.android", name = "maps-compose", version.ref = "googleMapsCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
