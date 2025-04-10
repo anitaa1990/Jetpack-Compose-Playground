@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Outer white ring -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M24,0A24,24 0 1,0 24,48A24,24 0 1,0 24,0Z" />
+
+    <!-- Inner yellow circle -->
+    <path
+        android:fillColor="#FAC901"
+        android:pathData="M24,4A20,20 0 1,0 24,44A20,20 0 1,0 24,4Z" />
+
+    <!-- Rounded upward triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,14
+            c0.8,0 1.6,0.4 2,1.2l8,13.8
+            c0.6,1 -0.1,2.3 -1.2,2.3H15.2
+            c-1.1,0 -1.8,-1.3 -1.2,-2.3l8,-13.8
+            c0.4,-0.8 1.2,-1.2 2,-1.2z" />
+</vector>

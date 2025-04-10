@@ -10,8 +10,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
+import com.an.jetpack_compose_playground.ui.component.GoogleMapView
 import com.an.jetpack_compose_playground.ui.component.permission.PermissionHandler
 import com.an.jetpack_compose_playground.ui.component.permission.PermissionManager
+import com.an.jetpack_compose_playground.utils.MapUtils
+import com.google.android.gms.maps.model.LatLng
 
 @Composable
 fun GoogleMapViewScreen() {
@@ -64,6 +67,13 @@ fun GoogleMapViewScreen() {
     }
 
     if (isPermissionGranted) {
-        // TODO: open GoogleMapsView
+        val pickupLocation = LatLng(12.984566, 80.264089)
+        val dropLocation = LatLng(12.949640, 80.237957)
+        val route = MapUtils.decodePolyline("o`gnAqq{hNWfCK~BGzBEPMXLLD?b@OfC@pBH`BLGvAGvAG|AOnEqDIe@rGIjAnAHlBN]|H]xEbEt@b@BTFJJTb@h@dB\\vCLRVP`@J`ACZ?FBHJH?|CC~@B|@BVOf@@lAVXHhAx@lAdAv@l@\\Rp@X~Bh@pB^b@LdCb@CNf@J\\FpATpKnBnDj@vCj@fD|@dD`AtDfAdCx@bC~@l@TlCv@zKxCf@Pz@`@hG~BdE|AxCdAhJ|CnDfAzA^dBj@bCt@nBp@xC~@bJhCx@ThD|@pBh@nIjBf@GHDd@Lt@TTZ`Cr@|CbAhF`BxAl@p@f@x@v@tB~BSTGIkBsBmAgASOw@a@yBq@eGkBiEuASCIDGDOLQRk@pDe@tDm@rHKzBY?YNVeDL}AZi@Dc@")
+        GoogleMapView(
+            pickupLocation = pickupLocation,
+            dropLocation = dropLocation,
+            routePolyline = route
+        )
     }
 }

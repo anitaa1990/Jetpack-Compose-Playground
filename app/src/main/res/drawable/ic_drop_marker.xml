@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="36dp"
+    android:viewportWidth="65"
+    android:viewportHeight="68">
+
+    <!-- Elliptical yellow ring with transparent center at Y=52 -->
+    <path
+        android:fillColor="#FAC901"
+        android:fillType="evenOdd"
+        android:pathData="
+        M30,52 a16,8 0 1,0 0.1,0Z
+        M30,54.5 a10.5,5.25 0 1,1 -0.1,0Z" />
+
+    <group android:translateY="12"> <!-- Adjust value to move it down -->
+        <!-- Balloon-shaped black marker -->
+        <path
+            android:fillColor="#000000"
+            android:pathData="M30,0
+            C17,0 6,11 6,24
+            c0,6.5 4.5,12.5 10.5,16.5
+            L30,50
+            l13.5,-9.5
+            C49.5,36.5 54,30.5 54,24
+            C54,11 43,0 30,0z" />
+
+        <!-- Flag pole -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M24,16 h2v16h-2z" />
+
+        <!-- Flag body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M28,16
+            h10
+            c1,0 2,1 2,2
+            v7
+            c0,1 -1,2 -2,2
+            h-10z" />
+    </group>
+</vector>
