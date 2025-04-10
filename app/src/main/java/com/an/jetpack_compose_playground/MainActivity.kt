@@ -15,6 +15,7 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_BIOMETRIC_AUTH
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_GOOGLE_MAPS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PAGINATED_LIST
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
@@ -24,6 +25,7 @@ import com.an.jetpack_compose_playground.ui.component.network.NetworkObserver
 import com.an.jetpack_compose_playground.ui.screen.BiometricAuthScreen
 import com.an.jetpack_compose_playground.ui.screen.BookPagerScreen
 import com.an.jetpack_compose_playground.ui.screen.CircleRevealPagerScreen
+import com.an.jetpack_compose_playground.ui.screen.GoogleMapViewScreen
 import com.an.jetpack_compose_playground.ui.screen.HomeScreen
 import com.an.jetpack_compose_playground.ui.screen.NetworkStatusScreen
 import com.an.jetpack_compose_playground.ui.screen.PaginatedLazyColumnScreen
@@ -76,6 +78,9 @@ class MainActivity : FragmentActivity() {
                     }
                     composable(route = ROUTE_SLIDE_TO_BOOK) {
                         SlideToBookScreen()
+                    }
+                    composable(route = ROUTE_GOOGLE_MAPS) {
+                        GoogleMapViewScreen()
                     }
                 }
             }

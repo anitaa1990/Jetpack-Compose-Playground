@@ -29,6 +29,7 @@ import com.an.jetpack_compose_playground.AppConstants.ROUTE_BIOMETRIC_AUTH
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_BOOK_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_CIRCLE_REVEAL_PAGER
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_COMPOSE_TEXT_EDITOR
+import com.an.jetpack_compose_playground.AppConstants.ROUTE_GOOGLE_MAPS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_NETWORK_STATUS
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PAGINATED_LIST
 import com.an.jetpack_compose_playground.AppConstants.ROUTE_PARALLAX_PAGER
@@ -73,52 +74,50 @@ fun HomeScreen(
                 infoTextRes = R.string.info_txt_compose_text_editor,
                 onClick = { navController.navigate(ROUTE_COMPOSE_TEXT_EDITOR) }
             )
-
             DemoButtonWithText(
-                buttonTextRes = R.string.btn_txt_book_pager,
-                infoTextRes = R.string.info_txt_book_pager,
-                onClick = { navController.navigate(ROUTE_BOOK_PAGER) }
+                buttonTextRes = R.string.btn_txt_slide_to_book,
+                infoTextRes = R.string.info_txt_slide_to_book,
+                onClick = { navController.navigate(ROUTE_SLIDE_TO_BOOK) }
             )
-
             DemoButtonWithText(
-                buttonTextRes = R.string.btn_txt_parallax_pager,
-                infoTextRes = R.string.info_txt_parallax_pager,
-                onClick = { navController.navigate(ROUTE_PARALLAX_PAGER) }
+                buttonTextRes = R.string.btn_txt_google_maps,
+                infoTextRes = R.string.info_txt_google_maps,
+                onClick = { navController.navigate(ROUTE_GOOGLE_MAPS) }
             )
-
-            DemoButtonWithText(
-                buttonTextRes = R.string.btn_txt_circle_reveal_pager,
-                infoTextRes = R.string.info_txt_circle_reveal_pager,
-                onClick = { navController.navigate(ROUTE_CIRCLE_REVEAL_PAGER) }
-            )
-
             DemoButtonWithText(
                 buttonTextRes = R.string.btn_txt_network_status,
                 infoTextRes = R.string.info_txt_network_status,
                 onClick = { navController.navigate(ROUTE_NETWORK_STATUS) }
             )
-
             DemoButtonWithText(
                 buttonTextRes = R.string.btn_txt_runtime_permission,
                 infoTextRes = R.string.info_txt_runtime_permission,
                 onClick = { navController.navigate(ROUTE_RUNTIME_PERMISSION) }
             )
-
             DemoButtonWithText(
                 buttonTextRes = R.string.btn_txt_biometric_auth,
                 infoTextRes = R.string.info_txt_biometric_auth,
                 onClick = { navController.navigate(ROUTE_BIOMETRIC_AUTH) }
             )
-
             DemoButtonWithText(
                 buttonTextRes = R.string.btn_txt_paginated_list,
                 infoTextRes = R.string.info_txt_paginated_list,
                 onClick = { navController.navigate(ROUTE_PAGINATED_LIST) }
             )
             DemoButtonWithText(
-                buttonTextRes = R.string.btn_txt_slide_to_book,
-                infoTextRes = R.string.info_txt_slide_to_book,
-                onClick = { navController.navigate(ROUTE_SLIDE_TO_BOOK) }
+                buttonTextRes = R.string.btn_txt_book_pager,
+                infoTextRes = R.string.info_txt_book_pager,
+                onClick = { navController.navigate(ROUTE_BOOK_PAGER) }
+            )
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_parallax_pager,
+                infoTextRes = R.string.info_txt_parallax_pager,
+                onClick = { navController.navigate(ROUTE_PARALLAX_PAGER) }
+            )
+            DemoButtonWithText(
+                buttonTextRes = R.string.btn_txt_circle_reveal_pager,
+                infoTextRes = R.string.info_txt_circle_reveal_pager,
+                onClick = { navController.navigate(ROUTE_CIRCLE_REVEAL_PAGER) }
             )
         }
     }
