@@ -59,8 +59,8 @@ This repository contains a collection of concise write ups and demos on building
 
 ---
 
-### GoogleMapsView
-* [GoogleMapsView](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/GoogleMapsView.kt)  is a `composable` that demonstrates how Google Maps can work with Jetpack Compose.
+### GoogleMapView
+* [GoogleMapView](/app/src/main/java/com/an/jetpack_compose_playground/ui/component/GoogleMapView.kt)  is a `composable` that demonstrates how Google Maps can work with Jetpack Compose.
 * Take a look at [GoogleMapViewScreen](/app/src/main/java/com/an/jetpack_compose_playground/ui/screen/GoogleMapViewScreen.kt) file on how to use this component in any app.
   
 <img src="https://github.com/user-attachments/assets/660cc790-772a-4bef-89ad-740440d18159" width="300">
